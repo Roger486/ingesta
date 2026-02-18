@@ -27,6 +27,22 @@ Construir una aplicación nutricional:
 
 ---
 
+## Monorepo y workspaces
+
+Paquetes principales:
+- `@ingesta/domain` (modelo y reglas de negocio)
+- `@ingesta/application` (casos de uso y orquestación)
+- `@ingesta/mobile` (app Angular/Capacitor)
+
+Comandos desde la raíz:
+- `npm test` (tests de todos los workspaces)
+- `npm run test:ci`
+- `npm run typecheck:packages`
+- `npm run test:watch:domain`
+- `npm run test:watch:application`
+- `npm run test:watch:mobile`
+---
+
 ## Qué NO es
 
 - No es una copia de MyFitnessPal.
