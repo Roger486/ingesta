@@ -1,0 +1,20 @@
+{
+  "name": "ingesta",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "npm run test --workspaces",
+    "test:ci": "npm run test:ci --workspaces",
+
+    "test:watch:domain": "npm run test:watch --workspace=@ingesta/domain",
+    "test:watch:application": "npm run test:watch --workspace=@ingesta/application",
+    "test:watch:mobile": "npm run test:watch --workspace=@ingesta/mobile",
+
+    "typecheck:domain": "npm run typecheck --workspace=@ingesta/domain",
+    "typecheck:application": "npm run typecheck --workspace=@ingesta/application",
+    "typecheck:packages": "npm run typecheck:domain && npm run typecheck:application"
+  }
+}
