@@ -17,8 +17,8 @@
     
     "baseUrl": "./",
     "paths": {
-      "@domain/*": ["../../packages/domain/*"],
-      "@application/*": ["../../packages/application/*"]
+      "@ingesta/domain": ["../../packages/domain/src/index.ts"],
+      "@ingesta/application": ["../../packages/application/src/index.ts"]
     }
   },
   "angularCompilerOptions": {
