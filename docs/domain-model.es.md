@@ -77,6 +77,7 @@ classDiagram
     +mealId: UUID
     +ingeribleId: UUID
     +grams: number
+    +ingeribleNameSnapshot: string
     +nutritionPer100gSnapshot: Nutrition
     +computedNutrition(): Nutrition
     // DB provides createdAt/updatedAt
